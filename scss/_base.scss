@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700');
+
+$dark-red: #6B0504;
+$light-black: #001514;
+$text-color: #2E3F3E;
+$font-stack: 'Playfair Display', serif;
+
+/*****Layout and Typography******/
+
+*,::after,::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  color: $text-color;
+  font-family: $font-stack;
+  font-size: 1.5rem;
+}
+
+img{
+  max-width: 100%;
+}
+
+
+h1,h2{
+  text-transform: uppercase;
+  color: $dark-red;
+  text-shadow: rgba(0,0,0,0.8);
+}
+p{
+  font-size: 1.2rem;
+  line-height: 2.2rem;
+
+  @include respond(phone){
+    font-size: 1rem;
+  }
+}
+
+a{
+  color: lighten($dark-red,20%);
+  &:hover{
+    color: lighten($dark-red,10%);
+    text-decoration: none;
+  }
+}
+
+/********Button***********/
+
+
+.btn-dark-red{
+  background: $dark-red;
+  border: $dark-red;
+  text-transform: uppercase;
+}

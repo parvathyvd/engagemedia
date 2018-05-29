@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700");
+/*****Layout and Typography******/
+*, ::after, ::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  color: #2E3F3E;
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem; }
+
+img {
+  max-width: 100%; }
+
+h1, h2 {
+  text-transform: uppercase;
+  color: #6B0504;
+  text-shadow: rgba(0, 0, 0, 0.8); }
+
+p {
+  font-size: 1.2rem;
+  line-height: 2.2rem; }
+  @media (max-width: 37.5em) {
+    p {
+      font-size: 1rem; } }
+
+a {
+  color: #cd0a08; }
+  a:hover {
+    color: #9c0706;
+    text-decoration: none; }
+
+/********Button***********/
+.btn-dark-red {
+  background: #6B0504;
+  border: #6B0504;
+  text-transform: uppercase; }
+
+/*********hero**********/
+#hero-section {
+  height: 95vh;
+  width: 100%; }
+  #hero-section video {
+    height: 95vh;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover; }
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+.heading {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 2rem 4rem;
+  text-align: center; }
+
+/*********about**********/
+.about-section {
+  margin: 15rem 0; }
+  @media (min-width: 112.5em) {
+    .about-section {
+      margin: 20rem 0; } }
+  @media (max-width: 75em) {
+    .about-section {
+      margin: 8rem 0; } }
+  @media (max-width: 56.25em) {
+    .about-section {
+      margin: 5rem 0; } }
+
+.about-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+/*********services**********/
+#services {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 4rem 0; }
+
+.icon-block {
+  position: relative;
+  margin-bottom: 4rem; }
+  .icon-block:hover .icons {
+    color: #cd0a08; }
+
+.icons {
+  font-size: 3rem;
+  color: #6B0504;
+  padding-bottom: 2rem;
+  padding-right: 2rem;
+  position: relative; }
+
+.icon-heading {
+  position: absolute;
+  top: 0;
+  left: 5rem; }
+
+/*******why choose &parnter********/
+.why-choose {
+  padding: 5rem 0; }
+
+.partner {
+  margin: 7rem 0; }
+
+footer {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 3rem 0;
+  font-size: .9rem;
+  color: #6B0504; }

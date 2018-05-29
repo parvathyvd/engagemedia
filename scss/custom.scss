@@ -1,0 +1,102 @@
+@import 'mixin';
+@import 'base';
+
+
+
+/*********hero**********/
+
+#hero-section{
+  height: 95vh;
+  width: 100%;
+  video{
+    height: 95vh;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+.hero-text{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+.heading{
+  background: rgba(0,0,0,0.1);
+  padding: 2rem 4rem;
+  text-align: center;
+}
+
+/*********about**********/
+
+
+.about-section{
+  margin: 15rem 0;
+
+  @include respond(big-desktop){
+    margin: 20rem 0;
+
+  }
+  @include respond(tab-land){
+    margin: 8rem 0;
+
+  }
+
+  @include respond(tab-port){
+    margin: 5rem 0;
+
+  }
+}
+.about-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*********services**********/
+#services{
+  background: rgba(0,0,0,0.1);
+  padding: 4rem 0;
+}
+
+
+.icon-block{
+  position: relative;
+  margin-bottom: 4rem;
+  &:hover{
+    .icons{
+      color: lighten($dark-red, 20%);
+    }
+  }
+}
+.icons {
+    font-size: 3rem;
+    color: $dark-red;
+    padding-bottom: 2rem;
+    padding-right: 2rem;
+    position: relative;
+}
+.icon-heading{
+  position: absolute;
+  top:0;
+  left:5rem;
+}
+
+/*******why choose &parnter********/
+
+.why-choose{
+  padding: 5rem 0;
+}
+
+.partner{
+  margin: 7rem 0;
+}
+
+footer{
+  background: rgba(0,0,0,0.1);
+  padding: 3rem 0;
+  font-size: .9rem;
+  color: $dark-red;
+}
+
+.copyright{
+}
